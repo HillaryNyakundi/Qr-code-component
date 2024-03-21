@@ -24,7 +24,6 @@ body {
   height: 400px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: auto;
   text-align: center;
 }
 
@@ -37,4 +36,20 @@ body {
 .card p {
   margin: 30px 10px;
   font-weight: 700;
+}
+
+.card small {
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    max-width: 90%;
+  }
 }
